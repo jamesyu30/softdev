@@ -1,4 +1,4 @@
-Warm up 1 sleep in
+#Warm up 1 sleep in
 
 def sleep_in(weekday, vacation):
   if(weekday==False or vacation==True):
@@ -6,7 +6,7 @@ def sleep_in(weekday, vacation):
   else:
       return False
 
-Warm up 1 monkey trouble
+#Warm up 1 monkey trouble
 
 def monkey_trouble(a_smile, b_smile):
   if((a_smile and b_smile) or (a_smile == False and b_smile == False)):
@@ -14,7 +14,7 @@ def monkey_trouble(a_smile, b_smile):
   else:
     return False
 
-Warm up 1 sum_double
+#Warm up 1 sum_double
 
 def sum_double(a, b):
   if a==b:
@@ -22,7 +22,7 @@ def sum_double(a, b):
   else:
     return a+b
 
-Warm up 1 diff21
+#Warm up 1 diff21
 
 def diff21(n):
   if n>21:
@@ -30,7 +30,7 @@ def diff21(n):
   else:
     return abs(n-21)
 
- Warm up 1 parrot trouble
+ #Warm up 1 parrot trouble
 
  def parrot_trouble(talking, hour):
   if(hour<7 or hour>20):
@@ -41,7 +41,7 @@ def diff21(n):
   else:
     return False
 
- Warm up 1 makes 10
+ #Warm up 1 makes 10
 
  def makes10(a, b):
   if(a+b == 10):
@@ -51,7 +51,7 @@ def diff21(n):
   else:
     return False
 
- Warm up 1 near hundred
+ #Warm up 1 near hundred
 
  def near_hundred(n):
   if(abs(100 - n) <=10 or abs(200 - n) <=10):
@@ -59,7 +59,7 @@ def diff21(n):
   else:
     return False
 
-Warm up 1 pos_neg
+#Warm up 1 pos_neg
 
 def pos_neg(a, b, negative):
   if negative:
@@ -72,7 +72,7 @@ def pos_neg(a, b, negative):
   else:
     return False
 
-Warm up 1 not string
+#Warm up 1 not string
 
 def not_string(str):
   if(str[0:3] == 'not'):
@@ -80,7 +80,7 @@ def not_string(str):
   else:
     return 'not ' + str
 
-warm up 1 missing char
+#warm up 1 missing char
 
 def missing_char(str, n):
   return str[0:n] + str[n+1:len(str)]
