@@ -84,3 +84,19 @@ def not_string(str):
 
 def missing_char(str, n):
   return str[0:n] + str[n+1:len(str)]
+
+#Warm up 1 front_back
+
+def front_back(str):
+  if(len(str)==1):
+    return str
+  else:
+    return str[len(str)-1:]  + str[1:len(str)-1] + str[:1]
+
+#Warm up 1 front3
+
+def front3(str):
+  if(len(str)<3):
+    return str*3
+  else:
+    return str[:3]*3
