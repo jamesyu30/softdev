@@ -12,7 +12,7 @@ OPS SUMMARY:
 """
 
 krewes = {2:["awong30","bchen30","cchen33"],7:["afang30","dchen30","gpark30"],8:["ali34","bwang30","eli30"]}
-
+#choose between 2,7,8
 def randomK ():
     randKey = random.randrange(0,3,1)
     return krewes[randKey]
