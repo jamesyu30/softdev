@@ -15,7 +15,6 @@ krewes = {2:["awong30","bchen30","cchen33"],7:["afang30","dchen30","gpark30"],8:
 
 def randomK ():
     randKey = random.randrange(0,3,1)
-    print(randKey)
     return krewes[randKey]
 
 print(randomK())
