@@ -7,6 +7,8 @@ k<nn>--<Title>
 Time Spent:
 
 DISCO: Don't use existing function names like random
+       random.choice picks randomly from a list, string, or tuple
+       list() typecasts to a list
 QCC:
 OPS SUMMARY:
 """
