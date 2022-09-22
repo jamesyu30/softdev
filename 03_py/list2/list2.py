@@ -51,13 +51,15 @@ print(centered_average([4,0,100]))
 #List2 sum13
 
 def sum13(nums):
-  total = 0
-  i = 0 #increment in for loop
-  for x in nums:
-    if x != 13 and nums[i-1] != 13:
-      total += x
-    i += 1
-  return total
+  i = 0
+  sum = 0
+  while(i<len(nums)):
+    if(nums[i]!=13):
+      sum = sum+nums[i]
+      i = i+1
+    else:
+      i = i+2
+  return sum
 
 #return sum of numbers in array excluding 13 and any number immediately after it
 print(sum13([1,2,2,1]))
