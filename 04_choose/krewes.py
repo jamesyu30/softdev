@@ -4,7 +4,7 @@ James Yu
 SoftDev
 k04--randomDict - randomly picks a value from a dictionary
 2022-9-22
-Time Spent:
+Time Spent: .7 hours
 
 DISCO: Don't use existing function names like random
        random.choice picks randomly from a list, string, or tuple
