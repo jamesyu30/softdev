@@ -10,10 +10,16 @@ QCC:
 OPS SUMMARY: 
 """
 
-#def readK():
-f = open("krewes.txt","r")
-t = f.read().strip().split("@@@")
+def readK():
+    f = open("krewes.txt","r")
+    t = f.read().strip().split("@@@")
+    i = 0
+    krewes = {}
+    while i<len(t):
+        t[i].split("$$$")
+        i++
+        
+    
 
-print(t[0].split("$$$"))
 
 
