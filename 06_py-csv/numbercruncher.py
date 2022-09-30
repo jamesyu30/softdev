@@ -1,6 +1,10 @@
 import random
 '''
-Coding Cobras - James Yu, Thomas Zhang 
+Coding Cobras - James Yu, Thomas Zhang
+Softdev
+2022-09-30
+Time Spent: 1.6 hours
+
 DISCO: readline() reads one character at a time and readlines() splits a file into lines
        rsplit splits from the right
        Split has a second parameter which determines how many times you split
