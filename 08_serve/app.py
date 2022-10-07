@@ -46,6 +46,5 @@ def chooseJob(krewes):
 def rand_job():
     return("Soup Sharks: James, Nada, Sadi <br>"+ str(chooseJob(krewes)) + \
                                                       "<br>" + str(krewes.keys())[11:len(str(krewes.keys()))-2])
-
 app.run()
     
