@@ -16,7 +16,7 @@ x = 0
 for i in mrm:
     #x exists just bc there are random lns of info that shouldn't be generated
     x += 1
-    if x in range(2,len(mrm)-1):
+    if x in range(2,len(mrm)):
         if("," in i):
             #to deal with quotations
             if("\"" in i):
@@ -46,5 +46,5 @@ def chooseJob(krewes):
 def rand_job():
     return("Soup Sharks: James, Nada, Sadi <br>"+ str(chooseJob(krewes)) + \
                                                       "<br>" + str(krewes.keys())[11:len(str(krewes.keys()))-2])
+app.debug = True
 app.run()
-    
