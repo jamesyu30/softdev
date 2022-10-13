@@ -48,3 +48,4 @@ def rand_job():
                                                       "<br>" + str(krewes.keys())[11:len(str(krewes.keys()))-2])
 app.debug = True
 app.run()
+    
