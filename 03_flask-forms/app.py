@@ -38,7 +38,7 @@ def disp_loginpage():
     print("***DIAG: request.args ***")
     print(request.args)#Prediction: 
     print("***DIAG: request.args['username']  ***")
-    print(request.args['username'])#Prediction: prints out the user's input
+    #print(request.args['username'])#Prediction: prints out the user's input
     print("***DIAG: request.headers ***")
     print(request.headers)#uncommenting this breaks the website
     return render_template( 'login.html' )
