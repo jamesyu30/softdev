@@ -1,11 +1,7 @@
 TEAM NAME
-
 SoftDev
-
 K12 -- Making a form using templates and the difference between post and get
-
 2022-10-17
-
 time spent: 1 hour
 
 You need methods=['GET', 'POST'] in order to load a webpage using post
