@@ -3,7 +3,7 @@
 ## Overview
 There are many features in real forms that we haven't touched upon, and these could come in useful for the user experience, as well as more customization.
 
-### Estimated Time Cost: x.x hrs (round to nearest 0.1)
+### Estimated Time Cost: .8 hrs
 
 ### Prerequisites:
 
@@ -23,15 +23,54 @@ There are many features in real forms that we haven't touched upon, and these co
 	</body>
 </html>
 ```
-1. Now add the form
+3. To make the form put this between the form tags
 ```
 <input type="" name=""></input>
 ```
-- For input type, 
+- Input type determines what input it takes. Here are all the input types:
+```
+<input type="button">
+<input type="checkbox">
+<input type="color">
+<input type="date">
+<input type="datetime-local">
+<input type="email">
+<input type="file">
+<input type="hidden">
+<input type="image">
+<input type="month">
+<input type="number">
+<input type="password">
+<input type="radio">
+<input type="range">
+<input type="reset">
+<input type="search">
+<input type="submit">
+<input type="tel">
+<input type="text">
+<input type="time">
+<input type="url">
+<input type="week">
+```
+- Name determines how it shows up in the URL (with GET requests). For example, if `name="input"` and the input is `hi` we get `test.html?name=hi`
+
+Now that we have our form we can customize it!  
+- We can label the form with `<label>Label</label>`
+
+- We can group forms and put them into a box like this:
+```
+<form action="">
+	<fieldset>
+		<input type="radio" name="input1"></input>
+		<input type="radio" name="input2"></input>
+		<input type="radio" name="input3"></input>
+	</fieldset>
+</form>
+```
 
 ### Resources
-* [https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form] (form documentation)
-
+* [Form documentation](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form)
+* [Styling forms](https://developer.mozilla.org/en-US/docs/Learn/Forms/Styling_web_forms)
 ---
 
 Accurate as of (last update): 2022-10-20
