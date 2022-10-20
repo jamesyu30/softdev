@@ -28,7 +28,7 @@ There are many features in real forms that we haven't touched upon, and these co
 
 
 ### Resources
-* [https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form](form documentation)
+* [https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form] (form documentation)
 
 ---
 
