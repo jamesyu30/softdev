@@ -1,7 +1,7 @@
 # how-to :: Make better forms
 ---
 ## Overview
-There are many features in real forms that we haven't touched upon, and these could come in useful for the user experience, as well as more customization. 
+There are many features in real forms that we haven't touched upon, and these could come in useful for the user experience, as well as more customization.
 
 ### Estimated Time Cost: x.x hrs (round to nearest 0.1)
 
@@ -18,14 +18,16 @@ There are many features in real forms that we haven't touched upon, and these co
 	</head>
 	<body>
 		<form action="">
-			<label>name</label>
-			<input type="name" name="Submit"></input>
-			<input type="submit" name="Submit">
+
 		</form>
 	</body>
 </html>
 ```
-
+1. Now add the form
+```
+<input type="" name=""></input>
+```
+- For input type, 
 
 ### Resources
 * [https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form] (form documentation)
