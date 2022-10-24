@@ -1,4 +1,4 @@
-To open sqlite, you have to type sqlite3 in the terminal 
+To open sqlite, you have to type sqlite3 in the terminal
 Make sure to put a semicolon at the end of every command line
 .tables shows the tables that you have created
 CREATE TABLE name (name TEXT, id INTEGER PRIMARY KEY) creates a table
