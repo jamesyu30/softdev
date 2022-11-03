@@ -6,7 +6,11 @@ app = Flask(__name__)
 def login():
     return render_template('login.html')
 
-#if __name__ == "__main__": 
- #   app.debug = True 
-app.run()    
+@app.route("/auth", methods=['GET', 'POST'])
+def auth():
+    return render_template('response.html')
+
+if __name__ == "__main__": 
+    app.debug = True 
+    app.run()    
 
