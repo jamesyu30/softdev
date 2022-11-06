@@ -1,3 +1,8 @@
+#Spooky Ghosts: Jun Hong Wang, James Yu, Thomas Zhang
+#softdev pd7
+#k19 -- making sessions using flask
+#2022-11-03
+#time spent: 1.5 hrs
 
 from flask import Flask, session, render_template, request, redirect
 import os
