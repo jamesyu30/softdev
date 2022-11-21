@@ -12,7 +12,7 @@ def get():
     url = json.loads(data.text)["url"] #res.text turns res into a string, json.loads converts json string to dictionary
     explanation = json.loads(data.text)["explanation"]
     return render_template("main.html", url=url, e=explanation)
-
+ 
 if __name__ == "__main__":
     app.debug = True
     app.run()
