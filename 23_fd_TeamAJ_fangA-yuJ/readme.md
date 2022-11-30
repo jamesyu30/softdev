@@ -4,7 +4,7 @@
 
 ### K23: A Day of Noodling
 ### 2022-11-28
-### time spent: TBD 
+### time spent: .5 hr
 
 # DISCO:
  * Foundation provides templates for web elements (ex: tables, nav bars, etc) and styling (ex: fonts) for site creation/design 
