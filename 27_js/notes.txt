@@ -1,0 +1,19 @@
+Buffalos buffalo Buffalo :: James Yu, Sadi Nirloy
+SoftDev pd8
+K27 -- Basic functions in JavaScript
+2023-04-04
+
+DISCO
+-----------------------------------------------------------------
+* #lang racket is needed at the top of the racket file to allow the file to be translated into racket
+* Everything in racket is a list or a function
+* Basic JS syntax
+=================================================================
+
+QCC
+-----------------------------------------------------------------
+* How to print HTML with JS?
+=================================================================
+
+
+
