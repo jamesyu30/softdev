@@ -52,7 +52,7 @@ var red = function() {
     items[i].classList.add('red');
   }
 };
-
+//it only turns the first and the last item red, not the entire list
 
 var stripe = function() {
   var items = document.getElementsByTagName("li");
@@ -64,6 +64,7 @@ var stripe = function() {
     }
   }
 };
+//stripe also only works on the first and last items. Maybe instead of adding, you replace the class.
 
 //insert your implementations here for...
 // FIB
