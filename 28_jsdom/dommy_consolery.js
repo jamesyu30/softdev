@@ -1,25 +1,5 @@
-/*
-   your PPTASK:
-   
-   Test drive each bit of code in this file,
-    and insert comments galore, indicating anything
-     you discover,
-    	have questions about,
-    		or otherwise deem notable.
-    		
-    		Write with your future self or teammates in mind.
-    		
-    		If you find yourself falling out of flow mode, consult 
-    		other teams
-    		MDN
-
-   A few comments have been pre-filled for you...
-   
-   (delete this block comment once you are done)
-*/
-
-// Team Phantom Tollbooth :: Clyde Sinclair, Fierce Dragon 
-// SoftDev pd0
+// Buffalos buffalo Buffalo :: James Yu, Sadi Nirloy
+// SoftDev pd8
 // K28 -- Getting more comfortable with the dev console and the DOM
 // 2023-04-05w
 // --------------------------------------------------
@@ -87,14 +67,44 @@ var stripe = function() {
 
 //insert your implementations here for...
 // FIB
+function fib (n){
+  if (n < 2){
+      return n;
+  }
+  else{
+      return fib(n - 1) + fib(n - 2);
+  }
+}
+
 // FAC
+function fact (n){
+  if (n < 2){
+      return 1;
+  }
+  else{
+      return n * fact(n - 1);
+  }
+}
+
 // GCD
+function gcd (a,b){
+  if(a == 0){
+    return b;
+  }
+  if (b == 0){
+    return a;
+  }
+  else{
+    return gcd(b, a%b);
+  }
+}
 
 // In addition to the style shown above,
 //  you are encouraged to test drive the "arrow function syntax" as shown below.
 //  Note anything notable.
-const myFxn = (param1, param2) => {
+const myFxn = (param1, param2) => { //it makes it act like a function without the funtion keyword
   // body
+  retVal = param1+param2;
   return retVal;
 };
 
