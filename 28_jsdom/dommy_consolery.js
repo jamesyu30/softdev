@@ -21,27 +21,38 @@ var f = function(x) {
 //adds 30 to the input
 
 //instantiate an object
-var o = { 'name' : 'Thluffy',
-          age : 1024,
-          items : [10, 20, 30, 40],
-          morestuff : {a : 1, b : 'ayo'},
-          func : function(x) {
+// Object o can be printed
+var o = { 'name' : 'Thluffy' , // o.name
+          age : 1024 , // o.age
+          items : [10, 20, 30, 40], // o.items, individual values can be like any other list: o.items[i]
+          morestuff : {a : 1, b : 'ayo'}, // o.morestuff gets the inner object, and the dot notation can be stacked: o.morestuff.a
+          func : function(x) { // o.func(input)
             return x+30;
           }
         };
-//o.name returns name
 
 var addItem = function(text) {
   var list = document.getElementById("thelist"); //thelist is the id for the list in the html file
-  var newitem = document.createElement("h1");
+    // To grab a part of the html by the user given id
+    // You can console.log(document) in order to get this object/dictionary of the whole HTML document
+    // Something similar appears when you console.log(document.getElementById("thelist"))
+    // Is this the DOM? A DOM is described as an API, and this console.log produces a dictionary. I even found a line: implementation: DOMImplementation
+    // I cannot seem to find where all the "Elements" are stored in the dict. There is a thing for firstChild and firstElementChild.
+    // So this firstChild is the Doctype declaration and a next sibling, which is the comment at the top. Is this because they are both comment like structures with <!> syntax?
+    // And firstChildElements then also has a firstChild key inside itself, so is this how the JS can search through the HTML file?
+  var newitem = document.createElement("li"); // Adds a tag to the HTML of this variable
   newitem.innerHTML = text;
+    // This is one of the keys I found when printing document
   list.appendChild(newitem);
+    // Supports my idea that the firstChild is the next element (IDK if the terminology is correct). There is a lastChild and lastElementChild as well in the document.
 };
 //adds a the text you input to the list
 //despite changing the html in the console, the update does not appear in the page
 
 var removeItem = function(n) {
   var listitems = document.getElementsByTagName('li'); // it doesn't specify which list it removes from
+    // So if you have a list earilier in the code, the code'll include them when counting. 
+    // Perhaps we could replace document with a document.getElementById(), to pick a starting point in the DOM to look through
   listitems[n].remove();
 };
 
@@ -68,27 +79,38 @@ var stripe = function() {
 
 //insert your implementations here for...
 // FIB
-function fib (n){
+var fib = function(n){
   if (n < 2){
       return n;
   }
   else{
       return fib(n - 1) + fib(n - 2);
   }
-}
+};
+
+var dasbut = document.getElementById("b"); 
+dasbut.addEventListener('click', ()=>{
+	console.log(fib(20));
+});
 
 // FAC
-function fact (n){
+var fact = function(n){
   if (n < 2){
       return 1;
   }
   else{
       return n * fact(n - 1);
   }
-}
+};
+
+var dasbut = document.getElementById("a"); 
+dasbut.addEventListener('click', ()=>{
+	console.log(fac(20));
+});
+
 
 // GCD
-function gcd (a,b){
+var gcd = function(a,b){
   if(a == 0){
     return b;
   }
@@ -107,6 +129,5 @@ const myFxn = (param1, param2) => { //it makes it act like a function without th
   // body
   retVal = param1+param2;
   return retVal;
-};
-
+}
 
