@@ -122,6 +122,11 @@ var gcd = function(a,b){
   }
 }
 
+var dasbut = document.getElementById("c"); 
+dasbut.addEventListener('click', ()=>{
+	console.log(gcd(20, 564));
+});
+
 // In addition to the style shown above,
 //  you are encouraged to test drive the "arrow function syntax" as shown below.
 //  Note anything notable.
