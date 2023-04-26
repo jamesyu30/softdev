@@ -10,6 +10,7 @@ var screenButton = document.getElementById("dvdButton");
 var ctx = c.getContext("2d");
 
 var requestID;
+var count = 0; //corner count
 
 var clear = (e) =>{
     e.preventDefault(); // To prevent some kind of unnecessary repetition
@@ -64,12 +65,32 @@ var dvdLogoSetup = function(){
     var xVel = Math.random() * 5;
     var yVel = Math.random() * 5;
 
+    //test TL and BR corners
+    //var rectWidth = 50;
+    //var rectHeight = 50;
+
+    //var rectX = 250;
+    //var rectY = 250;
+    
+    //var xVel = 5;
+    //var yVel = 5;
+    //------------------------------------------
+    //test TR and BL corners
+    //var rectWidth = 50;
+    //var rectHeight = 50;
+
+    //var rectX = 200;
+    //var rectY = 250;
+    
+    //var xVel = -5;
+    //var yVel = 5;
 
     var logo = new Image();
     logo.src = "logo_dvd.jpg";
 
     var dvdLogo = function() {
-        var count = 0;
+        //console.log(rectX);
+        //console.log(rectY);
         //clear(); makes an error (TypeError: Cannot read properties of undefined (reading 'preventDefault'))
         ctx.clearRect(0, 0, c.width, c.height)
         ctx.drawImage(logo, rectX, rectY, rectWidth, rectHeight);
@@ -88,18 +109,18 @@ var dvdLogoSetup = function(){
             count++;
         }
         //bottom left
-        if (rectY + rectHeight >= c.height && rectX + rectWidth <= 0){
+        if (rectY + rectHeight >= c.height && rectX <= 0){
             count++;
         }
         //top right
-        if (rectY + rectHeight <= 0 && rectX + rectWidth >= c.width){
+        if (rectY <= 0 && rectX + rectWidth >= c.width){
             count++;
         }
         //top left
-        if (rectY + rectHeight <= 0 && rectX + rectWidth <= 0){
+        if (rectY <= 0 && rectX <= 0){
             count++;
         }
-        document.getElementById('count').innerHTML = count;
+        document.getElementById('count').innerHTML = count;//displays counter
         requestID = window.requestAnimationFrame(dvdLogo);//dvdSetup makes the logo go VERY fast
     };
     dvdLogo();
