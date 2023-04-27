@@ -1,0 +1,4 @@
+Capture phase - the DOM has a hierarchy of different elements. 
+During the capture phase, the event objects goes the the window (highest) to the element just above the element you are looking for.
+
+Bubble phase - it is the same as the capture phase but in reverse. (From parent element to window)
